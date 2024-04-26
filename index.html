@@ -1,0 +1,113 @@
+<html>
+    <head>
+        <!--insertamos el titulo principal-->
+        <title>eventos</title>
+        <!--hacemos la vinculacion con los archivos de bootstrap-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+       <!--hacemos la conexion css-->
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+        <!--titulo-->
+            <h1>conciertos de musica urbana</h1> 
+
+        <!--contenedor para barra de navegacion-->
+        <div class="container">
+            <nav class="navbar bg-body-tertiary">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img src="img/1968779.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-top">
+                        Somos una productora dedicada a llevar la emoción y el ritmo de la música urbana a cada rincón del país. 
+                        posibles proximos eventos:
+                    </a>
+                </div>
+            </nav>
+
+
+            <hr>
+            <!--se mostraran las tarjetas con imagenes(3)-->
+            <div class="row">
+                    <div class="col-4">
+                        <div class="card" style="width: 18rem;">
+                            <img src="img/th.jpeg" class="card-img-top" alt="karol G">
+                            <div class="card-body">
+                                <h5 class="card-title">23 de mayo</h5>
+                                <p class="card-text">concierto de karol G. solo en movistar arena, santiago. desde las 19hrs a 22hrs.</p>
+                                <a href="#" class="btn btn-primary">cotizar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card" style="width: 18rem;">
+                            <img src="img/nicki_nicole_entrevista_revista_mine_destacada.jpg" class="card-img-top" alt="nicki nicole">
+                            <div class="card-body">
+                                <h5 class="card-title">17 de junio</h5>
+                                <p class="card-text">concierto de nicki nicole. solo en movistar arena, santiago. desde las 20hrs hasta las 23hrs.</p>
+                                <a href="#" class="btn btn-primary">cotizar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card" style="width: 18rem;">
+                            <img src="img/OIP.jpeg" class="card-img-top" alt="kidd voodoo">
+                            <div class="card-body">
+                                <h5 class="card-title">05 de julio</h5>
+                                <p class="card-text">concierto de kidd voddoo. solo en estadio german becker, temuco. desde las 18hrs hasta las 20hrs.</p>
+                                <a href="#" class="btn btn-primary">cotizar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--aqui se mostrara el carrusel carrusel con las imagenes (3)-->
+                <div id="carouselExampleIndicators" class="carousel slide">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="img/371260_3_62353a5e78aa4.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="img/rosalia-performs-on-stage-during-the-motomami-tour-at-news-photo-1659339847.jpeg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="img/bad-bunny-press-2023-billboard-1548.jpeg" class="d-block w-100" alt="...">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
+
+                <hr>
+                <!--a continuacion se mostrara el formulario-->
+                <form>
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label">nombre completo</label>
+                      <input type="text" class="form-control" id="exampleInputName" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label">numero de contacto</label>
+                      <input type="number" class="form-control" id="exampleInputNumberPhone">
+                    </div>
+                    <div class="mb-3 form-check">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1">guardar datos</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">agendar</button>
+                  </form>
+
+            </div>
+        </div>
+    </body>
+</html>

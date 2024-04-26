@@ -1,0 +1,13 @@
+body {
+    background-color:aliceblue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+#titulo-principal {
+    margin-top: 12px;
+}
+
